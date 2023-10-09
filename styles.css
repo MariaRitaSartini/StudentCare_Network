@@ -104,6 +104,14 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.citazione{
+  font-size: 1.10rem;
+  font-weight: 250;
+  text-align: center;
+  font-style: italic;
+  text-decoration: underline;
+}
+
 .giustificato {
   text-align: justify;
 }
