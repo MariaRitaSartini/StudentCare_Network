@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grafico a Torta con Bootstrap</title>
+    <!-- Includi il CSS di Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
+    <style>
+        /* CSS personalizzato per il grafico a torta */
+        .pie-chart {
+            width: 200px; /* Imposta la larghezza del grafico a torta */
+            height: 200px; /* Imposta l'altezza del grafico a torta */
+            border-radius: 50%; /* Crea una forma circolare */
+            background: conic-gradient(
+                #52b48d 0% 10%,   /* Segmento 1 */
+                #67cfdb 50% 60%,  /* Segmento 2 */
+                #5858fb 60% 70%,  /* Segmento 3 */
+                #f077d0 70% 80%  /* Segmento 3 */
+            );
+        }
+
+        .chart-legend {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Grafico a Torta con Bootstrap</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Contenitore del grafico a torta -->
+                <div class="pie-chart"></div>
+            </div>
+            <div class="col-md-6">
+                <!-- Legenda del grafico a torta -->
+                <div class="chart-legend">
+                    <p><span style="background-color: #ff5733;"></span> Segmento 1</p>
+                    <p><span style="background-color: #33ff33;"></span> Segmento 2</p>
+                    <p><span style="background-color: #3333ff;"></span> Segmento 3</p>
+                    <p><span style="background-color: #d3f705;"></span> Segmento 4</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Includi il JavaScript di Bootstrap (opzionale) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
