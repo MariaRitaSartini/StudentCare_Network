@@ -16,16 +16,19 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/carousel.css" rel="stylesheet" />
+        <link href="css/table.css" rel="stylesheet" />
 
     </head>
+    <script src="js/carousel.js"></script>
     <script>
         function goToPage(page){
             //var path = "https://mariaritasartini.github.io/StudentCare_Network/" + page;
             var path = "http://localhost/HCI/StudentCare_Network/" + page;
             window.location.replace(path);
+            
         }
     </script>
-    <body id="page-top">
+    <body id="page-top" onload="currentSlide(1)">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
@@ -36,8 +39,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded selected">C1</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" onclick="goToPage('Assigment2.html')">C2</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" onclick="goToPage('index.html')">C1</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded selected">C2</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
                     </ul>
                 </div>
@@ -65,11 +68,83 @@
                 <!-- Portfolio Section Heading-->
                 <h1 class="masthead-subheading font-weight-light mb-0">Introduzione</h1><br>
                 <div class="masthead-subheading font-weight-light mb-0 lead giustificato">
-                    Il gruppo di lavoro che si è occupato della raccolta e dell’analisi dei dati riportati è composto da studenti del Politecnico di Milano, frequentanti il corso di <span class="grassetto">Human-Computer Interaction</span>. 
-                    I membri del gruppo sono Andrea Rubagotti, Tommaso Testa, Maria Concetta Santagata, Maria Rita Sartini, Kevin Wang e Marco Zuccoli. 
-                    Tutti i membri hanno avuto partecipazione attiva all’interno delle attività di raccolta e analisi secondo modalità che saranno illustrate in seguito.
+                    <div style="display: flex; align-items: center;">
+                        <p style="margin-right: 20px;">Il gruppo di lavoro che si è occupato della raccolta e dell’analisi dei dati riportati è composto da studenti del Politecnico di Milano, frequentanti il corso di <span class="grassetto">Human-Computer Interaction</span>. 
+                        I membri del gruppo sono Andrea Rubagotti, Tommaso Testa, Maria Concetta Santagata, Maria Rita Sartini, Kevin Wang e Marco Zuccoli. 
+                        Tutti i membri hanno avuto partecipazione attiva all’interno delle attività di raccolta e analisi secondo modalità che saranno illustrate in seguito.</p>
+                        <img src="./images/cabin.png" class="documentImage">
+                    </div>
+                    
+                    <div class="slideshow-container carousel">
 
-                </div> <br><br><br><br>
+                        <div class="mySlides">
+                          <div>
+                            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="images/ServiziOnline.png" alt="Descrizione dell'immagine">
+                                <br><br>
+                                <h5 class="masthead-subheading font-weight-light mb-0" style="text-align: center;" >Servizi Online</h5>
+                            </div><br>
+                            
+                        </div>
+                        </div>
+                        
+                        <div class="mySlides">
+                          <div class="numbertext">2 / 3</div>
+                            <img src="images/cake.png" style="width:100%">
+                          <div class="text">Caption Two</div>
+                        </div>
+                        
+                        <div class="mySlides">
+                          <div class="numbertext">3 / 3</div>
+                            <img src="images/cabin.png" style="width:100%">
+                          <div class="text">Caption Three</div>
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                        
+                    </div>
+                        <br>
+                        
+                        <div style="text-align:center">
+                          <span class="dot" onclick="currentSlide(1)"></span> 
+                          <span class="dot" onclick="currentSlide(2)"></span> 
+                          <span class="dot" onclick="currentSlide(3)"></span> 
+                        </div>
+
+                        <div class="grid-container">
+                            <div class="item1">
+                                <div class="portfolio-item mx-auto">
+                                    <img class="img-fluid" src="images/ServiziOnline.png">
+                                </div>
+                            </div>
+                            <div class="item2">
+                                <div class="portfolio-item mx-auto">
+                                    <img class="img-fluid" src="images/cabin.png">
+                                </div>
+                            </div>
+                            <div class="item3">
+                                <div class="portfolio-item mx-auto">
+                                    <img class="img-fluid" src="images/Segreteria.png">
+                                </div>
+                            </div>  
+                            <div class="item4">
+                                <div class="portfolio-item mx-auto">
+                                    <img class="img-fluid" src="images/PianoStudi.png">
+                                </div>
+                            </div>
+                            <div class="item5">
+                                <div class="portfolio-item mx-auto">
+                                    <img class="img-fluid" src="images/Email.png">
+                                </div>
+                            </div>
+                          </div>
+                          
+                </div>
+                <br><br><br><br>
                 <h1 class="masthead-subheading font-weight-light mb-0">Dominio di interesse</h1><br>
                 <div class="masthead-subheading font-weight-light mb-0 lead giustificato">
                     L'oggetto della nostra ricerca si concentra sulle difficoltà incontrate dagli studenti del Politecnico di Milano relativamente 

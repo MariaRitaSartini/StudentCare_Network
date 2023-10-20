@@ -104,6 +104,11 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.document_image{
+    height: 50px;
+    width: 50px;
+}
+
 .selected{
   color: #1abc9c !important;
 }
@@ -11003,6 +11008,8 @@ html {
   width: 15rem;
 }
 
+
+
 @media (min-width: 992px) {
   .masthead {
     padding-top: calc(6rem + 104px);
@@ -11016,8 +11023,14 @@ html {
     font-size: 1.5rem;
   }
 }
+
+.documentImage{
+  border-radius: 0.5rem;
+  width: 40%; 
+  height: 100%;
+}
+
 .portfolio .portfolio-item {
-  cursor: pointer;
   position: relative;
   display: block;
   max-width: 25rem;
