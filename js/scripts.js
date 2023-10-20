@@ -7,6 +7,12 @@
 // Scripts
 // 
 
+function goToPage(page){
+    var path = "https://mariaritasartini.github.io/StudentCare_Network/" + page;
+    //var path = "http://localhost/HCI/StudentCare_Network/" + page;
+    window.location.replace(path);
+}
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
