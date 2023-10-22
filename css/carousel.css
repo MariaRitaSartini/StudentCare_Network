@@ -1,7 +1,7 @@
 * {box-sizing: border-box}
 .mySlides {display: none}
 img {vertical-align: middle;
-    cursor: pointer;}
+    }
 /* modifica sopra */
 /* Slideshow container */
 .slideshow-container {
