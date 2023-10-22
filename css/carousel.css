@@ -1,7 +1,8 @@
 * {box-sizing: border-box}
 .mySlides {display: none}
-img {vertical-align: middle;}
-
+img {vertical-align: middle;
+    cursor: pointer;}
+/* modifica sopra */
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
