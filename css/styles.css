@@ -668,6 +668,24 @@ progress {
   margin-left: auto;
 }
 
+.documentContainer{
+  display: flex;
+  align-items: center;
+}
+
+.testo{
+  width: 60%;
+}
+
+.immagine{
+  width: 40%;
+}
+
+.foto{
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
@@ -11031,6 +11049,14 @@ html {
   height: 100%;
 }
 
+.genericDiv {
+  border-radius: 0.5rem;
+  width: 40%;
+  height: 100%;
+  background-color: your_color; /* Imposta il colore di sfondo desiderato */
+}
+
+
 .portfolio .portfolio-item {
   position: relative;
   display: block;
@@ -11052,6 +11078,10 @@ html {
 }
 .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
   font-size: 1.5rem;
+}
+
+.padre .gino{
+  width: 40% !important;
 }
 
 .portfolio-modal .btn-close {
