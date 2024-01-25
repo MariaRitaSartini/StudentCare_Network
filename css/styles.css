@@ -505,6 +505,64 @@ legend + * {
   float: right;
 }
 
+/*********************************************************/
+.K3-pros-cons {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  max-width: 700px;
+  margin: auto;
+  box-shadow: 0 4px 16px -4px rgba(0, 0, 0, 0.4);
+}
+.K3-pros-cons .heading {
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 16px 24px;
+}
+.K3-pros-cons .pros-container .heading {
+  background: #2c3e50;
+}
+.K3-pros-cons .cons-container .heading {
+  background: #02c39a;
+}
+.K3-pros-cons .pros-container ul li::before {
+  content: "\f12a";
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  padding-right: 16px;
+  color: #2c3e50;
+  display: block;
+}
+.K3-pros-cons .cons-container ul li::before {
+  content: "\f0d0";
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  padding-right: 16px;
+  color: #02c39a;
+  display: block;
+}
+.K3-pros-cons .pros-container,
+.K3-pros-cons .cons-container {
+  flex: 1;
+}
+.K3-pros-cons .pros {
+  border-right: 1px solid #eee;
+}
+.K3-pros-cons ul {
+  padding: 8px 0;
+  list-style: none;
+  margin: 0;
+}
+.K3-pros-cons ul li {
+  padding: 16px 32px;
+  font-size: 16px;
+  line-height: 2;
+  display: flex;
+}
+/*********************************************************/
+
+
 .K2-pros-cons {
   font-family: "Raleway", sans-serif;
   display: flex;
